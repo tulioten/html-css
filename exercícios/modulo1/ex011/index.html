@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/raibow.svg" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+        <picture>
+            <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+
+    <h1>Áudios e Vídeos</h1><!--Para realizar o Loop, o comendo tem que vir antes do "controls"-->
+        <p>Audiozinho do Gepeto kkkkkk <br>
+            <audio src="midias/gepeto.mp4" controls></audio>
+        </p>
+    <h1>Vídeo com hospedagem INTERNA</h1>
+        <p>Vídeo de afinação para teste</p><!--Vídeo com hospedagem própria, mas gasta muita banda-->
+        <video poster="imagens/foto1.jpg" controls><!--poster é a "capa do vídeo"-->
+            <source src="midias/Afinação.mp4" type="video/mp4"><!-- cada browser tem sua compatibilidade, se o vídeo n for compativel, abre o próximo.-->
+            <source src="xxxxxxxxxxxxxxxxxx" type="video/webm">
+            <source src="xxxxxxxxxxxxxxxxxx" type="video/ogg">
+        </video>
+
+    <h1>Vídeo com hospedagem EXTERNA</h1>
+        <p>teste de vídeo hospedado no youtube</p> <!--vídeo com hospedagem externa, nesse caso, youtube-->
+        <iframe width="640" height="358" src="https://www.youtube.com/embed/WOqPn20h3ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <p>para ver todos os exercícios, <a href="../Reunindo Exercícios/index.html">clicar aqui</a></p>
+</body>
+</html>

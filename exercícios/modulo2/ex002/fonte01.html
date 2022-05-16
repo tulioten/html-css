@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <Style>
+       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        /*
+        Fonte hospedada no fonts.google.com 
+        */
+        body{
+            font-family: 'Open Sans';
+       
+        /*
+        Medidas Absolutas:
+        cm, mm, in(polegadas), px(pixel - recomendado), pt(ponto) e pc
+
+        Medicas Relativas:
+        em(medida do m - recomendado), ex(medida do x), rem(root em, definida atraves do body, vw(view port width, varia de aparelho para aparelho), vh(view port heidht, varia de aparelho para aparelho) e %
+
+        16px = 1em (geralmente)
+        */
+        font-size: 16px; /* normalmente é usado 16px como base*/
+        /* lighter normal bold bolder */
+      }
+        h1{
+            font: italic 700 3em 'Open Sans', sans-serif;
+            /* shorthand font
+
+            sempre na ordem: 
+            
+            font-style -> font-weight -> font-size -> font-family
+
+            Isso funciona como: 
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+        }
+
+        h2{
+            font: Italic bold 2em 'Open Sans', sans-serif;
+        }
+
+    </Style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut laboriosam obcaecati accusantium iusto earum, officiis modi perspiciatis placeat, deserunt sequi tempore ab, quo assumenda animi iste voluptatum repudiandae cum recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit libero nihil, totam a ad numquam. Dolorum atque quis in eius, velit, iusto itaque culpa quibusdam quod, laboriosam fugit quae. Aspernatur?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ipsam velit iste eaque est cumque quibusdam similique beatae. Corporis veritatis iste quae ipsa eligendi blanditiis sit sint iusto amet voluptatum.</p>
+
+        <h2>Subtítulo do Exercício</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat harum dolorum, soluta cupiditate similique itaque quas, perspiciatis quis possimus eaque modi? Fugiat non quidem, quae animi unde error velit consequatur?</p>
+</body>
+</html>
