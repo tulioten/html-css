@@ -9,15 +9,44 @@
     <style>
         
         table{
+            font-family: Arial, Helvetica, sans-serif;
             border: 1px solid black;
             border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
         }
 
-        th, td{
+        th{
             border: 1px solid black;
             border-collapse: collapse;
+            padding: 6px;
+            
         }
 
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+            
+        }
+
+        .topo{
+            background-color: grey;
+            font-weight: bold;
+            color: white;
+        }
+
+        .media{
+            background-color: grey;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+        }
+        .mt{
+            text-align: left;
+        }
+        
     </style>
     
 </head>
@@ -25,15 +54,63 @@
 
     <table>
         <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Médias</th>
+            <th class="topo" rowspan="2">Área</th>
+            <th class="topo" rowspan="2">Disciplinas</th>
+            <th class="topo" colspan="2">Notas</th>
+            <th class="topo" rowspan="2">Médias</th>
         </tr>
 
         <tr>
-
+            <th class="topo">Nota 1</thclass>
+            <th class="topo">Nota 2</th>
         </tr>    
+
+        <tr>
+            <th rowspan="4">Exatas</th>
+            <td class="mt">Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="mt">Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="mt">Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="mt">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="media" colspan="4">Média de Exatas</th>
+            <td class="topo">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Humanas</th>
+            <td class="mt">História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="mt">Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="media" colspan="4">Média de Humanas</th>
+            <td class="topo">0.0</td>
+        </tr>
 
     </table>
     
