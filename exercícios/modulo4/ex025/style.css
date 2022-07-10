@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right,#935eac, #c77f62);
+    color: white;
+}
+
+iframe {
+    width: 99%;
+    height: 300px;
+    border: 1px solid white;
+}
